@@ -1,0 +1,45 @@
+.jumbotron{
+    padding-top:3.5rem;
+}
+/*Tooltip css*/
+[tool-tip-msg] {
+	position:relative;
+
+}
+[tool-tip-msg]:before {
+	content:'';
+	/* hides the tooltip when not hovered */
+	display:none;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #1a1a1a;
+	position:absolute;
+	top:35px;
+	left:35px;
+	z-index:8;
+	font-size:0;
+	line-height:0;
+	width:0;
+	height:0;
+}
+[tool-tip-msg]:after {
+	display:none;
+	content:attr(tool-tip-msg);
+	position:absolute;
+	top:40px;
+	left:0px;
+	padding:5px 8px;
+	background:#1a1a1a;
+	color:#fff;
+	z-index:9;
+	font-size: 0.75em;
+	height:28px;
+	line-height:18px;
+  border-radius: 3px;
+	white-space:nowrap;
+	word-wrap:normal;
+}
+[tool-tip-msg]:hover:before,
+[tool-tip-msg]:hover:after {
+	display:block;
+}
