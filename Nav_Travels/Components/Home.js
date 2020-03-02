@@ -5,7 +5,7 @@ class Home extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <Navbar location={this.props.location} />
+                <Navbar location={this.props.history.location} />
                 <main role="main">
 
                     <div className="jumbotron">
@@ -38,13 +38,9 @@ class Home extends React.Component {
                     </div>
 
                 </main>
-
-                <footer className="container">
-                    <p>&copy; Company 2017-2018</p>
-                </footer>
             </React.Fragment>
         )
     }
 }
 
-export default Home;
+export const Component = Home;

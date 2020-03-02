@@ -5,7 +5,7 @@ class Login extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <Navbar location={this.props.location} />
+                <Navbar location={this.props.history.location} />
                 <form className="form-signin">
                     <div className="text-center mb-4">
                         <h1 className="h3 mb-3 font-weight-normal">Sign in</h1>
@@ -33,4 +33,4 @@ class Login extends React.Component {
     }
 }
 
-export default Login;
+export const Component = Login;
